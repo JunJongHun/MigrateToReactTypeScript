@@ -1,10 +1,10 @@
 import React from "react";
 import { styled } from "styled-components";
 
-function Button({ title, submit, onClick, color }) {
+function Button({ title, type, onClick, color }) {
   return (
-    <ButtonLayout type="submit" onClick={onClick} color={color}>
-      Login
+    <ButtonLayout type={type} onClick={onClick} color={color}>
+      {title}
     </ButtonLayout>
   );
 }

@@ -43,7 +43,11 @@ const LoginPage = () => {
           color="#007bff"
         />
       </Form>
-      <AuthLink to="signup" title="SignUp" spanText="아직 회원이 아니신가요?" />
+      <AuthLink
+        to="signup"
+        title="회원가입"
+        spanText="아직 회원이 아니신가요?"
+      />
     </LoginPageLayout>
   );
 };

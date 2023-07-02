@@ -13,7 +13,7 @@ function AuthLink({ to, title, spanText }) {
 
 export default AuthLink;
 
-const AuthLinkLayout = styled.span`
+const AuthLinkLayout = styled.div`
   margin: 1.5rem;
 `;
 

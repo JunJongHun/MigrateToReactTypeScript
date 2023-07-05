@@ -6,7 +6,7 @@ import AuthLink from "../components/AuthLink";
 import AuthInput from "../components/AuthInput";
 import Button from "../components/Button";
 
-const LoginPage = () => {
+function LoginPage() {
   const initialData = { email: "", password: "" };
   const { values, handleChange } = useInput(initialData);
 
@@ -50,7 +50,7 @@ const LoginPage = () => {
       />
     </LoginPageLayout>
   );
-};
+}
 
 export default LoginPage;
 

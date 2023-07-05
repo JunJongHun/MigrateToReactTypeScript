@@ -6,7 +6,7 @@ import useInput from "../hooks/useInput";
 import AuthInput from "../components/AuthInput";
 import Button from "../components/Button";
 
-function SignUpPage(props) {
+function SignUpPage() {
   const initialData = { name: "", email: "", password: "" };
   const { values, handleChange } = useInput(initialData);
 

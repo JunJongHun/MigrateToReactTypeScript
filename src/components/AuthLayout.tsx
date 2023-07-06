@@ -1,7 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
 
-function AuthLayout({ children }) {
+type AuthLayoutProps = {
+  children: React.ReactNode;
+};
+
+function AuthLayout({ children }: AuthLayoutProps) {
   return <AuthLayoutLayout>{children}</AuthLayoutLayout>;
 }
 

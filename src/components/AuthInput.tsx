@@ -1,7 +1,23 @@
 import React from "react";
 import { styled } from "styled-components";
 
-function AuthInput({ label, name, value, onChange, type, placeholder }) {
+type AuthInputProps = {
+  label: string;
+  name: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type: string;
+  placeholder: string;
+};
+
+function AuthInput({
+  label,
+  name,
+  value,
+  onChange,
+  type,
+  placeholder,
+}: AuthInputProps) {
   return (
     <AuthInputLayout>
       <Label htmlFor={name}>{label}</Label>

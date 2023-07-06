@@ -1,7 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
 
-function Button({ title, type, onClick, color }) {
+type ButtonProps = {
+  title: string;
+  type: "button" | "submit" | "reset" | undefined;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  color: string;
+};
+
+function Button({ title, type, onClick, color }: ButtonProps) {
   return (
     <ButtonLayout type={type} onClick={onClick} color={color}>
       {title}

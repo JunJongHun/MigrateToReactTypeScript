@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
-function AuthLink({ to, title, spanText }) {
+type AuthLinkProps = {
+  to: string;
+  title: string;
+  spanText: string;
+};
+
+function AuthLink({ to, title, spanText }: AuthLinkProps) {
   return (
     <AuthLinkLayout>
       <span>{spanText}</span>

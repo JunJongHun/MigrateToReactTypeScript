@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-function Title({ name }) {
+type TitleProps = {
+  name: string;
+};
+
+function Title({ name }: TitleProps) {
   return <TitleLayout>{name}</TitleLayout>;
 }
 

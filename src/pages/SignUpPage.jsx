@@ -5,6 +5,7 @@ import { styled } from "styled-components";
 import useInput from "../hooks/useInput";
 import AuthInput from "../components/AuthInput";
 import Button from "../components/Button";
+import AuthLayout from "../components/AuthLayout";
 
 function SignUpPage() {
   const initialData = { name: "", email: "", password: "" };
@@ -17,7 +18,7 @@ function SignUpPage() {
   };
 
   return (
-    <SignUpPageLayout>
+    <AuthLayout>
       <Title name="회원가입" />
       <Form onSubmit={handleSubmit}>
         <AuthInput
@@ -52,19 +53,11 @@ function SignUpPage() {
         />
       </Form>
       <AuthLink to="" title="로그인" spanText="계정이 이미 있으신가요?" />
-    </SignUpPageLayout>
+    </AuthLayout>
   );
 }
 
 export default SignUpPage;
-
-const SignUpPageLayout = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
 
 const Form = styled.form`
   display: flex;
